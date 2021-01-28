@@ -20016,6 +20016,7 @@ in
     ubootClearfog
     ubootGuruplug
     ubootJetsonTK1
+    ubootNanoPCT4
     ubootNovena
     ubootOdroidC2
     ubootOdroidXU3
