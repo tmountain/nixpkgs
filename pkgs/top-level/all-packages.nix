@@ -3994,7 +3994,9 @@ in
 
   eva = callPackage ../tools/misc/eva { };
 
-  exa = callPackage ../tools/misc/exa { };
+  exa = callPackage ../tools/misc/exa {
+    inherit (darwin.apple_sdk.frameworks) Security;
+  };
 
   exempi = callPackage ../development/libraries/exempi {
     stdenv = if stdenv.isi686 then gcc6Stdenv else stdenv;
