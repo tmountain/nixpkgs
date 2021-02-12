@@ -8379,7 +8379,9 @@ in
 
   toilet = callPackage ../tools/misc/toilet { };
 
-  tokei = callPackage ../development/tools/misc/tokei { };
+  tokei = callPackage ../development/tools/misc/tokei {
+    inherit (darwin.apple_sdk.frameworks) Security;
+  };
 
   toml2nix = (callPackage ../tools/toml2nix { }).toml2nix { };
 
